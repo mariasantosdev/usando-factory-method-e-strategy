@@ -13,7 +13,7 @@ public class FuncionarioController {
 
     public String abreMenu() {
         return JOptionPane.showInputDialog(null, "Escolha uma letra para começar o jogo sendo: " +
-                "I(Cria funcionário integral), T(Cria funcionário temporárop), P(Criar funcionário parcial), " +
+                "I(Cria funcionário integral), T(Cria funcionário temporário), P(Criar funcionário parcial), " +
                 "E(Criar funcionário estagiário)");
     }
 
