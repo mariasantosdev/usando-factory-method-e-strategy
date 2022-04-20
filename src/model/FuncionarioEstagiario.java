@@ -20,4 +20,11 @@ public class FuncionarioEstagiario extends Funcionario {
         funcionarioEstagiario.setInstituicaoParceira("Grupo alura");
         return funcionarioEstagiario;
     }
+
+    @Override
+    public String toString() {
+        return "FuncionarioEstagiario{" +
+                "instituicaoParceira='" + instituicaoParceira + '\'' +
+                "} " + super.toString();
+    }
 }
