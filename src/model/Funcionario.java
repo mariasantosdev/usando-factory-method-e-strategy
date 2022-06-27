@@ -6,20 +6,16 @@ public abstract class Funcionario {
     private Long id;
     private String nome;
     private BigDecimal salario;
+    private BigDecimal bonificacao;
 
-    public void setId(Long id) {
-        this.id = id;
+    public BigDecimal getSalario() {
+        return salario;
     }
 
-    public void setNome(String nome) {
+    public Funcionario(String nome, BigDecimal salario) {
         this.nome = nome;
-    }
-
-    public void setSalario(BigDecimal salario) {
         this.salario = salario;
     }
-
-    public abstract Funcionario create(String nome);
 
     @Override
     public String toString() {
