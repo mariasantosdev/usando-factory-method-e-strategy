@@ -3,13 +3,16 @@ package model;
 import java.math.BigDecimal;
 
 public abstract class Funcionario {
-    private Long id;
     private String nome;
     private BigDecimal salario;
     private BigDecimal bonificacao;
 
     public BigDecimal getSalario() {
         return salario;
+    }
+
+    public BigDecimal getBonificacao() {
+        return bonificacao;
     }
 
     public Funcionario(String nome, BigDecimal salario) {
@@ -20,9 +23,9 @@ public abstract class Funcionario {
     @Override
     public String toString() {
         return "Funcionario{" +
-                "id=" + id +
-                ", nome='" + nome + '\'' +
+                "nome='" + nome + '\'' +
                 ", salario=" + salario +
+                ", bonificacao=" + bonificacao +
                 '}';
     }
 }

@@ -9,7 +9,7 @@ public class FuncionarioEstagiario extends Funcionario {
     }
 
     public BigDecimal getBonificacao() {
-        return super.getSalario().multiply(new BigDecimal("0.03"));
+        return new BigDecimal("100.00");
     }
 
 }
