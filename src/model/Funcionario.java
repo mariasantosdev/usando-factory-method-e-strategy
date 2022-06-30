@@ -25,7 +25,6 @@ public abstract class Funcionario {
         return "Funcionario{" +
                 "nome='" + nome + '\'' +
                 ", salario=" + salario +
-                ", bonificacao=" + bonificacao +
                 '}';
     }
 }
